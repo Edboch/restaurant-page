@@ -25,6 +25,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2px;
 
 }
 
@@ -38,7 +39,7 @@ button {
 }
 
 #content {
-    height: calc(100vh - 50px);
+    min-height: calc(100vh - 50px);
     background-image: url("./img/hanxiao-xu-kpSv4lopgmU-unsplash.jpg");
     background-position: center;
     background-size: cover;
@@ -49,23 +50,11 @@ button {
 }
 
 .text-container{
-    background-color: rgba(5, 5, 5, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     width: min(600px,80vw);
     padding: 40px;
-    margin: 0 10vw;
-}
-
-h1 {
-    font-size: 3rem;
-}
-
-h3 {
-    font-size: 2rem;
-}
-
-p {
-    font-size: 1.5rem;
+    margin: 0 10vw; 
 }
 
 section {
@@ -73,8 +62,18 @@ section {
     line-height: 1.5;
 }
 
-.text {
+.title {
+    font-size: 3rem;
+}
+
+.subtitle {
+    font-size: 2rem;
+}
+
+.text,
+.price{
     margin-top: 15px;
+    font-size: 1.5rem;
 }
 
 .photo-credit {
@@ -95,4 +94,31 @@ footer {
 
 .contact-info > *{
     margin-bottom: 5px;
+}
+
+.menu-container {
+    align-self: start;
+    margin: 50px 10vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
+}
+
+.menu-section {
+    color: #fff;
+}
+
+.food-name {
+    font-size: 1.8rem;
+}
+
+.desc {
+    font-size: 1.3rem;
+}
+
+.selected {
+    font-weight: 700;
+    text-decoration: underline;
 }

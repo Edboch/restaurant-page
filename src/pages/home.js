@@ -1,15 +1,15 @@
 export const renderHome = (content) => {
     const textBox = document.createElement('div');
     const title = document.createElement('h1');
-    const slogan = document.createElement('h3');
+    const subtitle = document.createElement('h3');
     const text = document.createElement('p');
     const photoCredit = document.createElement('div');
 
     textBox.className = 'text-container';
     title.className = 'title';
     title.textContent = 'Golden Wok Harmony';
-    slogan.className = 'slogan';
-    slogan.textContent = '"Experience Tradition, Savor Freshness!"';
+    subtitle.className = 'subtitle';
+    subtitle.textContent = '"Experience Tradition, Savor Freshness!"';
     text.className = 'text';
     text.textContent = 'We take pride in serving the finest Chinese cuisine,'
                     +'crafted from fresh, locally sourced ingredients.'
@@ -20,6 +20,6 @@ export const renderHome = (content) => {
     photoCredit.className = 'photo-credit';
     photoCredit.textContent = 'Photo by Hanxiao Xu on Unsplash';
 
-    textBox.append(title,slogan,text);
+    textBox.append(title,subtitle,text);
     content.append(textBox,photoCredit);
 };
