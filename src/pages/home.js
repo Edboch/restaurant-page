@@ -5,7 +5,7 @@ export const renderHome = (content) => {
     const text = document.createElement('p');
     const photoCredit = document.createElement('div');
 
-    textBox.className = 'textbox';
+    textBox.className = 'text-container';
     title.className = 'title';
     title.textContent = 'Golden Wok Harmony';
     slogan.className = 'slogan';
