@@ -9,7 +9,6 @@
 
 
 .container {
-    height: 100vh;
     display: grid;
     grid-template-rows: 50px 1fr;
     
@@ -39,7 +38,8 @@ button {
 }
 
 #content {
-    background-image: url("../img/hanxiao-xu-kpSv4lopgmU-unsplash.jpg");
+    height: calc(100vh - 50px);
+    background-image: url("./img/hanxiao-xu-kpSv4lopgmU-unsplash.jpg");
     background-position: center;
     background-size: cover;
     display: flex;
@@ -57,10 +57,6 @@ button {
     margin-right: 10vw;
 }
 
-.textbox > :not(:last-child) {
-    margin-bottom: 12px;
-}
-
 h1 {
     font-size: 3rem;
 }
@@ -73,9 +69,26 @@ p {
     font-size: 1.5rem;
 }
 
+.text {
+    margin-top: 15px;
+}
+
 .photo-credit {
     position: absolute;
     left: 5px;
     bottom: 5px;
     font-size: 1.2rem;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: min(100px,5vw);
+    padding: 80px;
+}
+
+.contact-info > *{
+    margin-bottom: 5px;
 }
